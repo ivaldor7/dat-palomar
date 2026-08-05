@@ -513,12 +513,12 @@ function mbComp(wrap){
   {name:"Ingreso neto",type:"bar",stack:"m",barWidth:44,data:calcs.map(c=>Math.round(c.ing)),itemStyle:{color:MBK.pos,borderRadius:[4,4,0,0]},
     label:{show:true,position:"top",formatter:p=>fmt(p.value),color:MBK.pos,fontWeight:"bold",fontSize:11}},
   {name:"Costos directos",type:"bar",stack:"m",barWidth:44,data:calcs.map(c=>-Math.round(c.costo)),itemStyle:{color:MBK.neg,borderRadius:[0,0,4,4]},
-    label:{show:true,position:"bottom",formatter:p=>fmt(-p.value),color:MBK.neg,fontWeight:"bold",fontSize:11}}];
+    label:{show:true,position:"insideBottom",formatter:p=>fmt(-p.value),color:"#fff",fontWeight:"bold",fontSize:11}}];
  if(mbState.showRinde)mser.push({name:"Rinde DAT (kg/ha)",type:"line",yAxisIndex:axR,data:rindes,symbol:"circle",symbolSize:8,lineStyle:{color:"#C8901C",width:2.5},itemStyle:{color:"#C8901C"},
    label:{show:true,position:"top",formatter:p=>fmt(p.value),color:"#C8901C",fontSize:10,fontWeight:"bold"}});
  if(mbState.showPrecio)mser.push({name:"Precio neto (US$/tn)",type:"line",yAxisIndex:axP,data:calcs.map(c=>c.neto),symbol:"diamond",symbolSize:9,lineStyle:{color:MBK.comm,width:2.5,type:"dashed"},itemStyle:{color:MBK.comm},
    label:{show:true,position:"bottom",formatter:p=>fmt(p.value),color:MBK.comm,fontSize:10,fontWeight:"bold"}});
- mkChart(mch,{grid:{left:56,right:(axR!=null&&axP!=null)?96:((axR!=null||axP!=null)?54:16),top:52,bottom:14},
+ mkChart(mch,{grid:{left:56,right:(axR!=null&&axP!=null)?96:((axR!=null||axP!=null)?54:16),top:52,bottom:36},
   legend:{top:2,textStyle:{fontSize:11,color:MBK.sub}},
   tooltip:{trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>{const i=ps[0].dataIndex,c=calcs[i];
     let h=`<b>${c.n}</b><br>Ingreso neto: <b>${fmt(c.ing)}</b> US$/ha<br>Costos directos: <b>${fmt(c.costo)}</b> US$/ha<br>Margen bruto: <b style="color:${mbColor(c.mb)}">${fmt(c.mb)}</b> US$/ha`;
@@ -533,7 +533,7 @@ function mbComp(wrap){
  let ch=mbCard(gr,false,"Distribución de costos","US$/ha por rubro · barra completa = gastos directos",Math.max(240,rc.length*58+90));
  const dser=MB.rubros.map((k,ki)=>({name:k,type:"bar",stack:"c",data:rc.map(c=>+(c.e.r[k]||0).toFixed(1)),itemStyle:{color:RUBC[k]},barWidth:26,emphasis:{focus:"series"},
    ...(ki===MB.rubros.length-1?{label:{show:true,position:"right",formatter:p=>fmt(totC[p.dataIndex]),color:MBK.ink,fontWeight:"bold",fontSize:11}}:{})}));
- mkChart(ch,{grid:{left:104,right:52,top:56,bottom:14},legend:{top:2,type:"scroll",textStyle:{fontSize:10.5,color:MBK.sub}},
+ mkChart(ch,{grid:{left:104,right:52,top:56,bottom:30},legend:{top:2,type:"scroll",textStyle:{fontSize:10.5,color:MBK.sub}},
   tooltip:{trigger:"axis",axisPointer:{type:"shadow"},valueFormatter:v=>f1(v)+" US$/ha"},
   yAxis:{type:"category",data:rc.map(c=>c.n),...mbAx,axisLabel:{...mbAx.axisLabel,color:MBK.ink,fontWeight:"bold"}},
   xAxis:{type:"value",...mbAx,...mbSplit},series:dser});
