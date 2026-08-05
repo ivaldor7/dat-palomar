@@ -44,6 +44,76 @@
   button.up{background:var(--ink);color:var(--paper);border:none;border-radius:999px;padding:8px 15px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit}
   footer{margin-top:26px;font-size:11.5px;color:var(--mut);line-height:1.5;border-top:1px solid var(--line);padding-top:12px}
   a{color:var(--green)}
+  /* ===== navegación principal ===== */
+  .mainnav{display:flex;gap:8px;margin:0 0 16px}
+  button.mnav{border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:10px;padding:9px 22px;font-size:14px;font-weight:800;cursor:pointer;font-family:inherit;letter-spacing:.5px}
+  button.mnav.on{background:var(--ink);color:var(--paper)}
+  /* ===== MARGEN BRUTO · estética cuaderno de campo (kraft) ===== */
+  .mbwrap{--kpaper:#E9E2D0;--kcard:#FBF8F0;--kink:#2A2823;--ksub:#6F6857;--kline:#D8CEB8;--kpos:#4F6F2C;--kneg:#B4471F;--kcomm:#9A5B2E;
+    background:var(--kpaper);color:var(--kink);border-radius:18px;padding:20px 18px 24px;margin:0 -4px;font-family:'Archivo',sans-serif}
+  .mbkick{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ksub);font-weight:700}
+  .mbhead{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:8px;border-bottom:2px solid var(--kink);padding-bottom:10px;margin-bottom:14px}
+  .mbtitle{font-family:'Archivo',sans-serif;font-weight:900;font-size:30px;letter-spacing:-.5px;margin:2px 0 0;line-height:1}
+  .mbheadr{text-align:right}
+  .mbcrop{font-size:20px;font-weight:900;color:var(--kpos)}
+  .mbsubtl{font-size:12px;color:var(--ksub)}
+  .mbcard{background:var(--kcard);border:1px solid var(--kline);border-radius:14px;padding:14px 14px 10px}
+  .mbcard.wide{grid-column:1/-1}
+  .mbchead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:6px;flex-wrap:wrap}
+  .mbchead h3{font-family:'Archivo',sans-serif;font-weight:900;font-size:13px;text-transform:uppercase;letter-spacing:.5px;margin:0}
+  .mbcnote{font-size:11px;color:var(--ksub);text-align:right}
+  .mbprice{margin-bottom:12px}
+  .mblbl{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--ksub);font-weight:700;margin-bottom:6px}
+  .mbpills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px}
+  button.mbpill{border:1.5px solid var(--kline);background:var(--kpaper);color:var(--ksub);border-radius:8px;padding:6px 13px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+  button.mbpill.on{background:var(--kink);color:#F3EEDF;border-color:var(--kink)}
+  .mbinrow{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .mbinrow label{font-size:12px;font-weight:600;color:var(--ksub);display:flex;align-items:center;gap:6px}
+  .mbinrow input{width:78px;padding:6px 8px;border:1px solid var(--kline);border-radius:7px;background:var(--kpaper);color:var(--kcomm);font-weight:900;font-size:14px;text-align:right;font-family:inherit;font-variant-numeric:tabular-nums}
+  .mbhint{font-size:11px;color:var(--ksub)}
+  button.mblink{border:none;background:none;color:var(--kpos);text-decoration:underline;cursor:pointer;font-size:11px;padding:0;font-family:inherit}
+  .mbtabs{display:flex;gap:4px;border-bottom:1px solid var(--kline);padding-bottom:9px;margin:2px 0 14px}
+  button.mbtab{border:none;background:transparent;color:var(--ksub);border-radius:999px;padding:7px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:inherit}
+  button.mbtab.on{background:var(--kink);color:#F3EEDF}
+  .mbemps{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+  button.mbemp{border:1.5px solid var(--kline);background:var(--kcard);color:var(--kink);border-radius:999px;padding:5px 14px;font-size:12.5px;font-weight:700;cursor:pointer;font-family:inherit}
+  button.mbemp.on{background:var(--kpos);border-color:var(--kpos);color:#F3EEDF}
+  .mbempshead{margin-bottom:8px}
+  .mbempname{font-size:24px;font-weight:900;letter-spacing:-.3px}
+  .mbempname span{font-size:12px;font-weight:600;color:var(--ksub);margin-left:10px}
+  .mbnota{font-size:11px;color:var(--ksub);margin-top:2px;line-height:1.45}
+  .mbpricenote{font-size:11px;color:var(--ksub);margin:6px 0 10px;line-height:1.4}
+  .mbkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--kline);overflow:hidden}
+  .mbkgrid.mbkt{border-radius:12px 12px 0 0}
+  .mbkgrid.mbkb{border-radius:0 0 12px 12px;margin-top:1px}
+  .mbkgrid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--kline);border-radius:12px;overflow:hidden;margin:10px 0 16px}
+  .mbkpi{background:var(--kcard);padding:11px 14px}
+  .mbkpi .l{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--ksub);font-weight:600}
+  .mbkpi .v{font-size:20px;font-weight:900;font-variant-numeric:tabular-nums;margin-top:2px;color:var(--kink)}
+  .mbkpi .v small{font-size:10px;font-weight:500;color:var(--ksub)}
+  .mbkpi.ing .v{color:var(--kpos)} .mbkpi.cos .v{color:var(--kneg)}
+  .mbkpi.hl{background:var(--kink)} .mbkpi.hl .l{color:#B7AE97} .mbkpi.hl .v{color:#9FC06B} .mbkpi.hl .v small{color:#B7AE97}
+  .mbranklbl{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--ksub);margin:4px 0 8px}
+  .mbrow{display:flex;align-items:center;gap:8px;padding:5px 0;border-bottom:1px solid var(--kline)}
+  .mbrow .idx{width:18px;text-align:right;font-size:11px;font-weight:800;color:var(--ksub);font-variant-numeric:tabular-nums}
+  .mbrow .body{flex:1;min-width:0}
+  .mbrow .top{display:flex;justify-content:space-between;font-size:12.5px;gap:8px}
+  .mbrow .nm{font-weight:700;color:var(--kink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mbrow .nm .fam{font-size:10px;font-weight:500;color:var(--ksub);margin-left:6px}
+  .mbrow .val{font-variant-numeric:tabular-nums;color:var(--kink);white-space:nowrap}
+  .mbrow .val span{color:var(--ksub)}
+  .mbrow .bar{height:8px;border-radius:3px;margin-top:3px}
+  table.mbtable{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}
+  .mbtable th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--ksub);text-align:right;padding:5px 8px;border-bottom:2px solid var(--kink);font-weight:800}
+  .mbtable th:first-child{text-align:left}
+  .mbtable td{padding:5px 8px;border-bottom:1px solid var(--kline);text-align:right}
+  .mbtable td.rname{text-align:left;font-weight:700}
+  .mbtable td .dot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:7px;vertical-align:baseline}
+  .mbtable td.best{color:var(--kpos);font-weight:900}
+  .mbtable td.worst{color:var(--kneg);font-weight:900}
+  .mbtable tr.tot td{border-top:2px solid var(--kink);font-weight:900;background:#F1EAD8}
+  .mbtable tr.sec td{font-weight:700;color:var(--ksub)}
+  @media(max-width:640px){.mbkgrid4{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -58,6 +128,11 @@
     <input type="file" id="fileCsv" accept=".csv" style="display:none">
   </div>
 </header>
+
+<div class="mainnav">
+  <button class="mnav on" data-main="dat">DAT CREA</button>
+  <button class="mnav" data-main="mb">MARGEN BRUTO</button>
+</div>
 
 <div class="controls">
   <div class="cgroup"><span class="clabel">Campaña</span><span id="campBtns"></span></div>
@@ -84,7 +159,7 @@ const PALETTE=["#2F5D3A","#C2552E","#D9A441","#3D6E8C","#7A4E7E","#6B8E23","#A14
 const CAMPS=[...new Set(DATA.records.map(r=>r.cp))].sort().reverse();
 const CAMPLBL={"2526":"2025-26","2425":"2024-25"};
 const SECTIONS=["Resumen","Agua","Genética","Manejo","Económico"];
-const state={cps:new Set([CAMPS[0]]),scope:"comp",section:"Resumen",emps:new Set(DATA.empresas)};
+const state={main:"dat",cps:new Set([CAMPS[0]]),scope:"comp",section:"Resumen",emps:new Set(DATA.empresas)};
 
 const fmt=n=>n==null||isNaN(n)?"—":Math.round(n).toLocaleString("es-AR");
 const f1=n=>n==null||isNaN(n)?"—":n.toLocaleString("es-AR",{minimumFractionDigits:1,maximumFractionDigits:1});
@@ -113,8 +188,13 @@ function buildControls(){
   DATA.empresas.forEach(e=>{const b=el("button","emp"+(state.emps.has(e)?"":" off"));b.innerHTML=`<span class="dot" style="background:${empColor(e)}"></span>${e}`;b.onclick=()=>{state.emps.has(e)?state.emps.delete(e):state.emps.add(e);render();};ec.appendChild(b);});
   const tb=document.getElementById("tabs");tb.innerHTML="";
   SECTIONS.forEach(s=>{const b=el("button","tab"+(s===state.section?" on":""),s);b.onclick=()=>{state.section=s;render();};tb.appendChild(b);});
-  document.getElementById("subtitle").textContent=`Soja · ${campList().map(c=>CAMPLBL[c]).join(" + ")} · El Palomar dentro del NOA`;
-  document.getElementById("emps").style.display=(state.scope==="region")?"none":"flex";
+  document.querySelectorAll(".mnav").forEach(b=>{b.classList.toggle("on",b.dataset.main===state.main);b.onclick=()=>{state.main=b.dataset.main;render();};});
+  const dat=state.main==="dat";
+  document.querySelector(".controls").style.display=dat?"flex":"none";
+  document.getElementById("tabs").style.display=dat?"flex":"none";
+  document.querySelector(".upload").style.display=dat?"flex":"none";
+  document.getElementById("subtitle").textContent=dat?`Soja · ${campList().map(c=>CAMPLBL[c]).join(" + ")} · El Palomar dentro del NOA`:"Margen bruto real por empresa · planillas normalizadas · Soja 25/26";
+  document.getElementById("emps").style.display=(dat&&state.scope!=="region")?"flex":"none";
 }
 let charts=[];
 function card(wide,title,note){const c=el("div","card"+(wide?" wide":""));const h=el("div","chead");h.appendChild(el("h3",null,title));if(note)h.appendChild(el("span","cnote",note));c.appendChild(h);const ch=el("div","chart");c.appendChild(ch);return{c,ch};}
@@ -136,8 +216,13 @@ const grid=()=>el("div","grid");
 function render(){
   charts.forEach(c=>c.dispose());charts=[];
   const app=document.getElementById("app");app.innerHTML="";buildControls();
-  ({"Resumen":secResumen,"Agua":secAgua,"Genética":secGenetica,"Manejo":secManejo,"Económico":secEconomico})[state.section](app);
-  document.getElementById("foot").innerHTML=`Datos: DAT CREA región NOA (nivel lote). Grupo El Palomar por CUIC; empresas nombradas desde las planillas individuales. AW 6410 IPRO unificada con M6410 IPRO. Económico = módulo predictivo estandarizado de la DAT (comparable, no es la contabilidad real de cada empresa). Podés seleccionar una o ambas campañas y el alcance (Grupo / NOA / Comparar). Cargá un CSV nuevo con el botón de arriba. Página estática apta para GitHub Pages.`;
+  if(state.main==="mb"){
+    renderMB(app);
+    document.getElementById("foot").innerHTML=`MARGEN BRUTO: planillas reales cargadas por cada empresa, normalizadas al modelo común de rubros de El Palomar (US$/ha de costos directos). Difiere del módulo "Económico" de la DAT, que es el predictivo estandarizado. El precio se puede igualar entre empresas (pizarra común) para comparar solo costos y rindes. Rubén García: planilla rotulada Maíz 24/25 pero corresponde a Soja 25/26 (confirmado). APUNOA: rinde estimado.`;
+  }else{
+    ({"Resumen":secResumen,"Agua":secAgua,"Genética":secGenetica,"Manejo":secManejo,"Económico":secEconomico})[state.section](app);
+    document.getElementById("foot").innerHTML=`Datos: DAT CREA región NOA (nivel lote). Grupo El Palomar por CUIC; empresas nombradas desde las planillas individuales. AW 6410 IPRO unificada con M6410 IPRO. Económico = módulo predictivo estandarizado de la DAT (comparable, no es la contabilidad real de cada empresa). Podés seleccionar una o ambas campañas y el alcance (Grupo / NOA / Comparar). Cargá un CSV nuevo con el botón de arriba. Página estática apta para GitHub Pages.`;
+  }
   setTimeout(()=>charts.forEach(c=>c.resize()),40);
 }
 window.addEventListener("resize",()=>charts.forEach(c=>c.resize()));
@@ -329,6 +414,221 @@ document.getElementById("fileCsv").onchange=e=>{const f=e.target.files[0];if(!f)
     DATA.records=recs;const cps=[...new Set(recs.map(r=>r.cp))];state.cps=new Set(cps.length?[cps.sort().reverse()[0]]:CAMPS);
     alert("Cargados "+recs.length+" lotes de soja.");render();
   },error:err=>alert("Error al leer el CSV: "+err)});};
+
+/* ================================================================
+   MARGEN BRUTO — planillas reales El Palomar · Soja 25/26
+   Estética "cuaderno de campo" (kraft) portada del tablero Molles.
+   Datos ya resumidos por rubro en US$/ha (modelo normalizado).
+   ================================================================ */
+const MBK={paper:"#E9E2D0",card:"#FBF8F0",ink:"#2A2823",sub:"#6F6857",line:"#D8CEB8",pos:"#4F6F2C",neg:"#B4471F",comm:"#9A5B2E"};
+const tint=(hex,f)=>{const n=parseInt(hex.slice(1),16);let r=(n>>16)&255,g=(n>>8)&255,b=n&255;r=Math.round(r+(255-r)*f);g=Math.round(g+(255-g)*f);b=Math.round(b+(255-b)*f);return `rgb(${r},${g},${b})`;};
+const MBFAMC={"Labores":"#C2702E","Agroquímicos":"#3E6FA8","Semillas":"#9A8748","Fertilizantes":"#5E9E6F"};
+const RUBC={Labores:"#C2702E",Cosecha:tint("#C2702E",.42),Semilla:"#9A8748",Curasemilla:tint("#9A8748",.42),Herbicida:"#3E6FA8",Insecticida:tint("#3E6FA8",.3),Coadyuvante:tint("#3E6FA8",.55),Fungicida:"#7A5AA0",Fertilizante:"#5E9E6F"};
+const MB={
+ rubros:["Labores","Cosecha","Semilla","Curasemilla","Herbicida","Insecticida","Fungicida","Coadyuvante","Fertilizante"],
+ fam:{Labores:"Labores",Cosecha:"Labores",Semilla:"Semillas",Curasemilla:"Semillas",Herbicida:"Agroquímicos",Insecticida:"Agroquímicos",Fungicida:"Agroquímicos",Coadyuvante:"Agroquímicos",Fertilizante:"Fertilizantes"},
+ emp:{
+  "Molles":{datKey:"Molles",ha:null,rinde:3.585,precio:320,comerc:50,arriendo:150,estructura:100,
+    nota:"Rinde real 3.585 kg/ha (tablero Finnegans). Precio neto: pizarra 320 − 50 de comercialización. Arriendo 150 y estructura 100 US$/ha.",
+    r:{Semilla:12.58,Curasemilla:5.64,Herbicida:52.75,Insecticida:13.38,Fungicida:0,Coadyuvante:10.88,Fertilizante:37.65,Labores:110.21,Cosecha:79.87}},
+  "APUNOA CD":{datKey:"APUNOA CD",ha:335,rinde:3.5,rindeEst:true,precio:310,comerc:50,arriendo:130,estructura:130,
+    nota:"Promedio ponderado de Pampa 1 (260 ha) y Zelarayán (75 ha). Rinde estimado 3,5 tn/ha. Fertilizante incluye foliares; labores incluyen el servicio de fertilización.",
+    r:{Semilla:22.00,Curasemilla:7.70,Herbicida:65.26,Insecticida:32.50,Fungicida:9.13,Coadyuvante:7.90,Fertilizante:70.84,Labores:89.29,Cosecha:80.00}},
+  "La Ronda":{datKey:"La Ronda",ha:440,rinde:3.3557,precio:323,comerc:50,arriendo:84,estructura:120,
+    nota:"Promedio ponderado de Luján 2-1, 2-2, 2-4 y Suri Pozo (440 ha). Comercialización: flete 50 US$/tn.",
+    r:{Semilla:33.38,Curasemilla:7.50,Herbicida:40.58,Insecticida:17.58,Fungicida:18.87,Coadyuvante:7.01,Fertilizante:35.43,Labores:97.66,Cosecha:82.50}},
+  "Rubén García":{datKey:"Ruben Garcia",ha:159,rinde:3.6074,precio:330,comerc:50,arriendo:150,estructura:60,
+    nota:"Planilla rotulada «Maíz 24/25» pero corresponde a Soja 25/26 (confirmado). Comercialización 50 US$/tn.",
+    r:{Semilla:23.95,Curasemilla:12.22,Herbicida:60.89,Insecticida:17.95,Fungicida:10.96,Coadyuvante:5.38,Fertilizante:56.96,Labores:81.25,Cosecha:75.00}}
+ }};
+const mbState={view:"comp",emp:"Molles",mode:"propio",comun:270,edit:null,showPct:false,showRinde:false,showPrecio:false};
+function mbRindeDAT(n){const key=MB.emp[n].datKey||n;const rs=DATA.records.filter(r=>r.cp==="2526"&&r.em===key&&r.ri!=null);const w=rs.length?wavg(rs,"ri"):null;return w!=null?Math.round(w):null;}
+function mbInitEdit(){if(!mbState.edit){mbState.edit={};Object.entries(MB.emp).forEach(([n,e])=>mbState.edit[n]=e.precio!=null?Math.round(e.precio-(e.comerc||0)):mbState.comun);}}
+function mbNeto(n){const e=MB.emp[n];
+ if(mbState.mode==="comun")return mbState.comun;
+ if(mbState.mode==="edit"){mbInitEdit();return mbState.edit[n];}
+ return e.precio!=null?e.precio-(e.comerc||0):mbState.comun;}
+const mbCosto=e=>MB.rubros.reduce((a,k)=>a+(e.r[k]||0),0);
+function mbCalc(n){const e=MB.emp[n],neto=mbNeto(n),costo=mbCosto(e);
+ const ing=e.rinde*neto,mb=ing-costo;
+ const bajo=(e.arriendo!=null||e.estructura!=null)?(e.arriendo||0)+(e.estructura||0):null;
+ return{e,neto,costo,ing,mb,bajo,mneto:bajo!=null?mb-bajo:null,rind:neto?costo/neto:null,
+   sinPrecio:mbState.mode==="propio"&&e.precio==null};}
+const mbColor=v=>v<0?MBK.neg:(v<=100?"#C8901C":MBK.pos);
+const mbAx={axisLine:{lineStyle:{color:MBK.line}},axisLabel:{color:MBK.sub,fontSize:11},axisTick:{show:false}};
+const mbSplit={splitLine:{lineStyle:{color:MBK.line}}};
+function famIcon(f,size){const c=MBFAMC[f]||"#999";const P={
+ "Agroquímicos":'<path d="M12 2C12 2 5 10 5 15a7 7 0 0 0 14 0C19 10 12 2 12 2Z"/>',
+ "Labores":'<g><rect x="3" y="9" width="11" height="5" rx="1"/><rect x="11" y="6" width="6" height="4" rx="1"/><circle cx="7" cy="17" r="2.6"/><circle cx="16" cy="17" r="2.6"/></g>',
+ "Semillas":'<g><path d="M12 21V11"/><path d="M12 13C8.5 13 6 10.5 6 7C9.5 7 12 9.5 12 13Z"/><path d="M12 12C15 12 17 9.8 17 7C14 7 12 9.2 12 12Z"/></g>',
+ "Fertilizantes":'<g><circle cx="8" cy="10" r="2.4"/><circle cx="15" cy="8" r="2.4"/><circle cx="12" cy="15" r="2.4"/></g>'};
+ const st=f==="Semillas";
+ return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="${st?"none":c}" stroke="${c}" stroke-width="${st?2:0}" stroke-linejoin="round" style="flex:none">${P[f]||""}</svg>`;}
+function mbCard(gr,wide,title,note,h){const c=el("div","mbcard"+(wide?" wide":""));const hd=el("div","mbchead");hd.appendChild(el("h3",null,title));if(note)hd.appendChild(el("span","mbcnote",note));c.appendChild(hd);const ch=el("div","chart");if(h)ch.style.height=h+"px";c.appendChild(ch);gr.appendChild(c);return ch;}
+
+function renderMB(app){
+ mbInitEdit();
+ const wrap=el("div","mbwrap");app.appendChild(wrap);
+ wrap.appendChild(el("div",null,`<div class="mbkick">CREA El Palomar · planillas reales por empresa</div>
+  <div class="mbhead"><h2 class="mbtitle">Margen bruto productivo</h2>
+  <div class="mbheadr"><div class="mbcrop">Soja</div><div class="mbsubtl">Campaña 25/26 · costos directos US$/ha</div></div></div>`));
+ /* selector de precio */
+ const pc=el("div","mbcard mbprice");wrap.appendChild(pc);
+ let mh=`<div class="mblbl">Precio para el cálculo del margen</div><div class="mbpills">`;
+ [["propio","Precio de cada empresa"],["comun","Pizarra común"],["edit","Editable por empresa"]].forEach(([k,l])=>mh+=`<button class="mbpill${mbState.mode===k?" on":""}" data-m="${k}">${l}</button>`);
+ mh+=`</div>`;
+ if(mbState.mode==="comun")mh+=`<div class="mbinrow"><label>Precio neto común <input type="number" id="mbComun" value="${mbState.comun}" step="5"> US$/tn</label><span class="mbhint">un solo precio para todas: la comparación queda solo en costos y rindes</span></div>`;
+ if(mbState.mode==="edit"){mh+=`<div class="mbinrow">`;Object.keys(MB.emp).forEach(n=>mh+=`<label>${n} <input type="number" class="mbEdit" data-emp="${n}" value="${mbState.edit[n]}" step="5"></label>`);mh+=`<span class="mbhint">precio neto US$/tn</span></div>`;}
+ if(mbState.mode==="propio")mh+=`<div class="mbhint">Pizarra − flete/gastos de comercialización según la planilla de cada empresa.</div>`;
+ pc.innerHTML=mh;
+ pc.querySelectorAll(".mbpill").forEach(b=>b.onclick=()=>{mbState.mode=b.dataset.m;render();});
+ const ic=pc.querySelector("#mbComun");if(ic)ic.onchange=ev=>{mbState.comun=+ev.target.value||0;render();};
+ pc.querySelectorAll(".mbEdit").forEach(i=>i.onchange=ev=>{mbState.edit[i.dataset.emp]=+ev.target.value||0;render();});
+ const gc=pc.querySelector("#mbGoComun");if(gc)gc.onclick=()=>{mbState.mode="comun";render();};
+ /* subsecciones */
+ const stb=el("div","mbtabs");wrap.appendChild(stb);
+ [["comp","Comparativo entre empresas"],["emp","Margen por empresa"]].forEach(([k,l])=>{const b=el("button","mbtab"+(mbState.view===k?" on":""),l);b.onclick=()=>{mbState.view=k;render();};stb.appendChild(b);});
+ (mbState.view==="comp"?mbComp:mbEmpView)(wrap);
+}
+
+/* ---------- COMPARATIVO ---------- */
+function mbComp(wrap){
+ const calcs=Object.keys(MB.emp).map(n=>({n,...mbCalc(n)})).sort((a,b)=>b.mb-a.mb);
+ const gr=el("div","grid");wrap.appendChild(gr);
+ /* ---- margen bruto por empresa: columnas ingresos (+, verde) vs costos (−, rojo) ---- */
+ const mc=el("div","mbcard wide");gr.appendChild(mc);
+ const mhd=el("div","mbchead");mhd.appendChild(el("h3",null,"Margen bruto por empresa"));
+ const mtg=el("div",null,`<span class="mbpills" style="margin:0"><button class="mbpill${mbState.showRinde?" on":""}" id="mbTgR">Línea de rinde</button><button class="mbpill${mbState.showPrecio?" on":""}" id="mbTgP">Línea de precio</button></span>`);
+ mhd.appendChild(mtg);mc.appendChild(mhd);
+ mc.appendChild(el("div","mbcnote","US$/ha · verde = ingreso neto · rojo = costos directos · la diferencia es el margen bruto"+(mbState.showRinde?" · rinde ponderado DAT 25-26 (kg/ha)":"")));
+ mtg.querySelector("#mbTgR").onclick=()=>{mbState.showRinde=!mbState.showRinde;render();};
+ mtg.querySelector("#mbTgP").onclick=()=>{mbState.showPrecio=!mbState.showPrecio;render();};
+ const mch=el("div","chart");mch.style.height="360px";mc.appendChild(mch);
+ const rindes=calcs.map(c=>{const rd=mbRindeDAT(c.n);return rd!=null?rd:Math.round(c.e.rinde*1000);});
+ const yAxes=[{type:"value",name:"US$/ha",nameTextStyle:{color:MBK.sub},...mbAx,...mbSplit}];
+ let axR=null,axP=null;
+ if(mbState.showRinde){axR=yAxes.length;yAxes.push({type:"value",name:"kg/ha",position:"right",nameTextStyle:{color:"#C8901C"},min:0,axisLine:{lineStyle:{color:"#C8901C"}},axisLabel:{color:"#C8901C",fontSize:10},axisTick:{show:false},splitLine:{show:false}});}
+ if(mbState.showPrecio){axP=yAxes.length;yAxes.push({type:"value",name:"US$/tn",position:"right",offset:axR!=null?52:0,nameTextStyle:{color:MBK.comm},min:0,axisLine:{lineStyle:{color:MBK.comm}},axisLabel:{color:MBK.comm,fontSize:10},axisTick:{show:false},splitLine:{show:false}});}
+ const mser=[
+  {name:"Ingreso neto",type:"bar",stack:"m",barWidth:44,data:calcs.map(c=>Math.round(c.ing)),itemStyle:{color:MBK.pos,borderRadius:[4,4,0,0]},
+    label:{show:true,position:"top",formatter:p=>fmt(p.value),color:MBK.pos,fontWeight:"bold",fontSize:11}},
+  {name:"Costos directos",type:"bar",stack:"m",barWidth:44,data:calcs.map(c=>-Math.round(c.costo)),itemStyle:{color:MBK.neg,borderRadius:[0,0,4,4]},
+    label:{show:true,position:"bottom",formatter:p=>fmt(-p.value),color:MBK.neg,fontWeight:"bold",fontSize:11}}];
+ if(mbState.showRinde)mser.push({name:"Rinde DAT (kg/ha)",type:"line",yAxisIndex:axR,data:rindes,symbol:"circle",symbolSize:8,lineStyle:{color:"#C8901C",width:2.5},itemStyle:{color:"#C8901C"},
+   label:{show:true,position:"top",formatter:p=>fmt(p.value),color:"#C8901C",fontSize:10,fontWeight:"bold"}});
+ if(mbState.showPrecio)mser.push({name:"Precio neto (US$/tn)",type:"line",yAxisIndex:axP,data:calcs.map(c=>c.neto),symbol:"diamond",symbolSize:9,lineStyle:{color:MBK.comm,width:2.5,type:"dashed"},itemStyle:{color:MBK.comm},
+   label:{show:true,position:"bottom",formatter:p=>fmt(p.value),color:MBK.comm,fontSize:10,fontWeight:"bold"}});
+ mkChart(mch,{grid:{left:56,right:(axR!=null&&axP!=null)?96:((axR!=null||axP!=null)?54:16),top:52,bottom:14},
+  legend:{top:2,textStyle:{fontSize:11,color:MBK.sub}},
+  tooltip:{trigger:"axis",axisPointer:{type:"shadow"},formatter:ps=>{const i=ps[0].dataIndex,c=calcs[i];
+    let h=`<b>${c.n}</b><br>Ingreso neto: <b>${fmt(c.ing)}</b> US$/ha<br>Costos directos: <b>${fmt(c.costo)}</b> US$/ha<br>Margen bruto: <b style="color:${mbColor(c.mb)}">${fmt(c.mb)}</b> US$/ha`;
+    if(mbState.showRinde)h+=`<br>Rinde DAT: ${fmt(rindes[i])} kg/ha`;
+    if(mbState.showPrecio)h+=`<br>Precio neto: ${fmt(c.neto)} US$/tn`;
+    return h;}},
+  xAxis:{type:"category",data:calcs.map(c=>c.n),...mbAx,axisLabel:{...mbAx.axisLabel,color:MBK.ink,fontWeight:"bold",fontSize:12}},
+  yAxis:yAxes,series:mser});
+ /* ---- distribución de costos por rubro ---- */
+ const rc=[...calcs].sort((a,b)=>a.costo-b.costo);
+ const totC=rc.map(c=>c.costo);
+ let ch=mbCard(gr,false,"Distribución de costos","US$/ha por rubro · barra completa = gastos directos",Math.max(240,rc.length*58+90));
+ const dser=MB.rubros.map((k,ki)=>({name:k,type:"bar",stack:"c",data:rc.map(c=>+(c.e.r[k]||0).toFixed(1)),itemStyle:{color:RUBC[k]},barWidth:26,emphasis:{focus:"series"},
+   ...(ki===MB.rubros.length-1?{label:{show:true,position:"right",formatter:p=>fmt(totC[p.dataIndex]),color:MBK.ink,fontWeight:"bold",fontSize:11}}:{})}));
+ mkChart(ch,{grid:{left:104,right:52,top:56,bottom:14},legend:{top:2,type:"scroll",textStyle:{fontSize:10.5,color:MBK.sub}},
+  tooltip:{trigger:"axis",axisPointer:{type:"shadow"},valueFormatter:v=>f1(v)+" US$/ha"},
+  yAxis:{type:"category",data:rc.map(c=>c.n),...mbAx,axisLabel:{...mbAx.axisLabel,color:MBK.ink,fontWeight:"bold"}},
+  xAxis:{type:"value",...mbAx,...mbSplit},series:dser});
+ /* ---- radar de costos ---- */
+ ch=mbCard(gr,false,"Perfil de costos (radar)","% del que más gasta en cada rubro",Math.max(240,rc.length*58+90));
+ const maxR={};MB.rubros.forEach(k=>maxR[k]=Math.max(...calcs.map(c=>c.e.r[k]||0),0.01));
+ const radEmp=n=>{const dk=MB.emp[n].datKey;const i=DATA.empresas.indexOf(dk);return i>=0?PALETTE[i%PALETTE.length]:MBK.ink;};
+ mkChart(ch,{tooltip:{},legend:{bottom:0,type:"scroll",textStyle:{fontSize:11,color:MBK.sub}},
+  radar:{indicator:MB.rubros.map(k=>({name:k,max:100})),radius:"62%",axisName:{color:MBK.ink,fontSize:11},splitLine:{lineStyle:{color:MBK.line}},splitArea:{show:false},axisLine:{lineStyle:{color:MBK.line}}},
+  series:[{type:"radar",data:calcs.map(c=>({name:c.n,value:MB.rubros.map(k=>Math.round(100*(c.e.r[k]||0)/maxR[k])),lineStyle:{color:radEmp(c.n),width:2},itemStyle:{color:radEmp(c.n)},areaStyle:{opacity:.06}}))}]});
+ /* tabla comparativa */
+ mbTable(wrap,calcs);
+}
+function mbTable(wrap,calcs){
+ const td=(v,cls)=>`<td${cls?` class="${cls}"`:""}>${v}</td>`;
+ const hilo=(vals,best)=>{const mn=Math.min(...vals),mx=Math.max(...vals);return vals.map(v=>mn===mx?"":(best==="min"?(v===mn?"best":v===mx?"worst":""):(v===mx?"best":v===mn?"worst":"")));};
+ let h=`<table class="mbtable"><thead><tr><th>Rubro (US$/ha)</th>${calcs.map(c=>`<th>${c.n}</th>`).join("")}</tr></thead><tbody>`;
+ MB.rubros.forEach(k=>{const vals=calcs.map(c=>c.e.r[k]||0),cls=hilo(vals,"min");
+   h+=`<tr><td class="rname"><span class="dot" style="background:${RUBC[k]}"></span>${k}</td>${vals.map((v,i)=>td(f1(v),cls[i])).join("")}</tr>`;});
+ h+=`<tr class="tot"><td class="rname">Gastos directos</td>${hilo(calcs.map(c=>c.costo),"min").map((cl,i)=>td(f1(calcs[i].costo),cl)).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Precio neto (US$/tn)</td>${calcs.map(c=>td(fmt(c.neto)+(c.sinPrecio?" ⚠":""))).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Rinde (kg/ha)</td>${hilo(calcs.map(c=>c.e.rinde),"max").map((cl,i)=>td(fmt(calcs[i].e.rinde*1000)+(calcs[i].e.rindeEst?" *":""),cl)).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Ingreso neto</td>${calcs.map(c=>td(fmt(c.ing))).join("")}</tr>`;
+ h+=`<tr class="tot"><td class="rname">Margen bruto</td>${hilo(calcs.map(c=>c.mb),"max").map((cl,i)=>td(fmt(calcs[i].mb),cl)).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Arriendo + estructura</td>${calcs.map(c=>td(c.bajo!=null?fmt(c.bajo):"—")).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Margen neto</td>${calcs.map(c=>td(c.mneto!=null?fmt(c.mneto):"—")).join("")}</tr>`;
+ h+=`<tr class="sec"><td class="rname">Rinde de indiferencia (tn/ha)</td>${hilo(calcs.map(c=>c.rind),"min").map((cl,i)=>td(calcs[i].rind!=null?calcs[i].rind.toLocaleString("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2}):"—",cl)).join("")}</tr>`;
+ h+=`</tbody></table><div class="mbhint" style="margin-top:6px">Verde = mejor del grupo · rojo = peor. Margen bruto = rinde × precio neto − gastos directos. * rinde estimado.</div>`;
+ const card=el("div","mbcard wide");card.style.marginTop="16px";
+ card.innerHTML=`<div class="mbchead"><h3>Tabla comparativa</h3><span class="mbcnote">US$/ha salvo indicado</span></div><div style="overflow-x:auto">${h}</div>`;
+ wrap.appendChild(card);
+}
+
+/* ---------- POR EMPRESA (vista kraft: sunburst + ranking) ---------- */
+function mbEmpView(wrap){
+ const chips=el("div","mbemps");wrap.appendChild(chips);
+ Object.keys(MB.emp).forEach(n=>{const b=el("button","mbemp"+(mbState.emp===n?" on":""),n);b.onclick=()=>{mbState.emp=n;render();};chips.appendChild(b);});
+ const n=mbState.emp,c=mbCalc(n),e=c.e;
+ wrap.appendChild(el("div","mbempshead",`<div class="mbempname">${n}<span>Soja · Campaña 25/26</span></div>${e.nota?`<div class="mbnota">${e.nota}</div>`:""}`));
+ const pd=(mbState.mode==="propio"&&e.precio!=null)
+   ?`Pizarra <b>${fmt(e.precio)}</b> − comercialización <b style="color:${MBK.comm}">${fmt(e.comerc||0)}</b> = precio neto <b style="color:${MBK.pos}">${fmt(c.neto)}</b> US$/tn`
+   :`Precio neto usado: <b style="color:${MBK.pos}">US$ ${fmt(c.neto)}/tn</b>${c.sinPrecio?" · pizarra común (sin precio propio cargado)":mbState.mode==="comun"?" · pizarra común":" · editable"}`;
+ wrap.appendChild(el("div","mbpricenote",pd));
+ /* KPIs */
+ const g1=el("div","mbkgrid mbkt");wrap.appendChild(g1);
+ [["Rinde",fmt(e.rinde*1000)+" <small>kg/ha"+(e.rindeEst?" est.":"")+"</small>"],["Hectáreas",e.ha!=null?fmt(e.ha):"—"],["Precio neto","US$ "+fmt(c.neto)+" <small>/tn</small>"]]
+  .forEach(([k,v])=>g1.appendChild(el("div","mbkpi",`<div class="l">${k}</div><div class="v">${v}</div>`)));
+ const g2=el("div","mbkgrid mbkb");wrap.appendChild(g2);
+ [["Ingresos",fmt(c.ing),"ing"],["Costos directos",fmt(c.costo),"cos"],["Margen bruto",fmt(c.mb),"hl"]]
+  .forEach(([k,v,m])=>g2.appendChild(el("div","mbkpi "+m,`<div class="l">${k}</div><div class="v">${v} <small>US$/ha</small></div>`)));
+ const g3=el("div","mbkgrid4");wrap.appendChild(g3);
+ const g3c=[["Arriendo",e.arriendo!=null?fmt(e.arriendo):"—"],["Estructura / Adm",e.estructura!=null?fmt(e.estructura):"—"],
+   ["Margen neto",c.mneto!=null?`<span style="color:${mbColor(c.mneto)}">${fmt(c.mneto)}</span>`:"—"],
+   ["Rinde de indiferencia",c.rind!=null?c.rind.toLocaleString("es-AR",{minimumFractionDigits:2,maximumFractionDigits:2})+" <small>tn/ha</small>":"—"]];
+ g3c.forEach(([k,v])=>g3.appendChild(el("div","mbkpi",`<div class="l">${k}</div><div class="v" style="font-size:17px">${v}</div>`)));
+ /* sunburst + ranking */
+ const card=el("div","mbcard wide");wrap.appendChild(card);
+ const hd=el("div","mbchead");hd.appendChild(el("h3",null,"En qué se va la plata"));
+ const tg=el("div",null,`<span class="mbpills" style="margin:0"><button class="mbpill${!mbState.showPct?" on":""}" data-p="0">Importe</button><button class="mbpill${mbState.showPct?" on":""}" data-p="1">%</button></span>`);
+ hd.appendChild(tg);card.appendChild(hd);
+ tg.querySelectorAll(".mbpill").forEach(b=>b.onclick=()=>{mbState.showPct=b.dataset.p==="1";render();});
+ const ch=el("div","chart");ch.style.height="460px";card.appendChild(ch);
+ mkChart(ch,mbSunOpt(e));
+ const rk=el("div",null,mbRankHTML(e));rk.style.borderTop=`1px solid ${MBK.line}`;rk.style.marginTop="6px";rk.style.paddingTop="8px";
+ card.appendChild(rk);
+}
+function mbSunOpt(e){
+ const total=mbCosto(e);
+ const fams={};MB.rubros.forEach(k=>{const v=e.r[k]||0;if(v<=0.005)return;(fams[MB.fam[k]]=fams[MB.fam[k]]||[]).push([k,v]);});
+ const data=Object.entries(fams).map(([f,subs])=>({name:f,value:+subs.reduce((a,s)=>a+s[1],0).toFixed(2),itemStyle:{color:MBFAMC[f]},
+   children:subs.sort((a,b)=>b[1]-a[1]).map(([k,v])=>({name:k,value:+v.toFixed(2),itemStyle:{color:RUBC[k]}}))}))
+  .sort((a,b)=>b.value-a.value);
+ const vt=v=>mbState.showPct?Math.round(100*v/total)+"%":f1(v);
+ const stroke={textBorderColor:"#fff",textBorderWidth:3.2};
+ return{backgroundColor:"transparent",
+  tooltip:{formatter:p=>`${p.name}: ${vt(p.value)}${mbState.showPct?"":" US$/ha"} (${Math.round(100*p.value/total)}%)`},
+  graphic:[{type:"text",left:"center",top:"44%",style:{text:mbState.showPct?"% del costo":"costo US$/ha",fill:MBK.sub,fontSize:12,textAlign:"center"}},
+           {type:"text",left:"center",top:"49%",style:{text:mbState.showPct?"100%":f1(total),fill:MBK.ink,fontSize:24,fontWeight:"bold",textAlign:"center"}}],
+  series:[{type:"sunburst",data,radius:[52,"84%"],center:["50%","50%"],sort:null,nodeClick:false,
+    emphasis:{focus:"ancestor"},itemStyle:{borderColor:MBK.card,borderWidth:2},
+    label:{color:MBK.ink,fontWeight:"bold",...stroke},
+    levels:[{},
+     {r0:46,r:"57%",label:{rotate:"tangential",fontSize:13,color:MBK.ink,...stroke,formatter:p=>p.value/total>=0.05?`${p.name}\n${vt(p.value)}`:p.name}},
+     {r0:"57%",r:"82%",label:{fontSize:12,color:MBK.ink,...stroke,minAngle:3,formatter:p=>`${p.name} ${vt(p.value)}`}}]}]};
+}
+function mbRankHTML(e){
+ const total=mbCosto(e);
+ const rows=MB.rubros.map(k=>({k,f:MB.fam[k],v:e.r[k]||0})).filter(x=>x.v>0.005).sort((a,b)=>b.v-a.v);
+ const max=Math.max(...rows.map(r=>r.v));
+ let h=`<div class="mbranklbl">Ranking de costos (US$/ha)</div>`;
+ rows.forEach((r,i)=>{h+=`<div class="mbrow"><span class="idx">${i+1}</span>${famIcon(r.f,16)}
+  <div class="body"><div class="top"><span class="nm">${r.k}<span class="fam">${r.f}</span></span><span class="val">${f1(r.v)} <span>· ${Math.round(100*r.v/total)}%</span></span></div>
+  <div class="bar" style="width:${Math.max(3,100*r.v/max)}%;background:${RUBC[r.k]}"></div></div></div>`;});
+ return h;
+}
 
 render();
 
